@@ -1,5 +1,11 @@
 packages: .
 
+if os(windows)
+  source-repository-package
+    type: git
+    location: https://github.com/tbidne/win32.git
+    tag: 2a4a1be4290b13cc9d49662c96c37b6ed80bd6fd
+
 package get-args-test
   ghc-options:
     -Wall -Wcompat

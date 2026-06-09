@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - win32
 
   pull_request:
     branches:

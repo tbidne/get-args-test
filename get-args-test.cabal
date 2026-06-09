@@ -14,6 +14,10 @@ executable get-args-test
     , base     >=4.21.0.0  && <4.23
     , process  ^>=1.6.26.0
 
+  if os(windows)
+    cpp-options: -DWINDOWS
+    build-depends: Win32
+
   hs-source-dirs:   app
   ghc-options:      -threaded -with-rtsopts=-N
   default-language: GHC2024
