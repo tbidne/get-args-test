@@ -1,0 +1,19 @@
+cabal-version:      2.4
+name:               get-args-test
+version:            0.1
+license:            MIT
+license-file:       LICENSE
+tested-with:        GHC ==9.12 || ==9.14
+extra-source-files:
+  .gitignore
+  README.md
+
+executable get-args-test
+  main-is:          Main.hs
+  build-depends:
+    , base     >=4.21.0.0  && <4.23
+    , process  ^>=1.6.26.0
+
+  hs-source-dirs:   app
+  ghc-options:      -threaded -with-rtsopts=-N
+  default-language: GHC2024
