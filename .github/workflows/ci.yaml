@@ -33,4 +33,4 @@ jobs:
           ghc-version: ${{ matrix.ghc }}
 
       - name: Run
-        run: cabal run get-args-test -- arg1 arg2
+        run: cabal run get-args-test -- arg1 arg2 "α β γ"

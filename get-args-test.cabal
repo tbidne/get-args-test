@@ -11,11 +11,12 @@ extra-source-files:
 executable get-args-test
   main-is:          Main.hs
   build-depends:
-    , base     >=4.21.0.0  && <4.23
-    , process  ^>=1.6.26.0
+    , base       >=4.21.0.0  && <4.23
+    , os-string  ^>=2.0.0.0
+    , process    ^>=1.6.26.0
 
   if os(windows)
-    cpp-options: -DWINDOWS
+    cpp-options:   -DWINDOWS
     build-depends: Win32
 
   hs-source-dirs:   app
